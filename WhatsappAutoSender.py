@@ -8,6 +8,7 @@ def send_file():
     filepath = input("Enter file path: ")
 
     # Open the Chrome Browser
+    # Path of the Chrome Web Driver should be given to open the chrome browser
     browser = webdriver.Chrome(executable_path=r"C:\Users\MRP\Downloads\chromedriver_win32\chromedriver.exe")
 
     # Whatsapp link to load
