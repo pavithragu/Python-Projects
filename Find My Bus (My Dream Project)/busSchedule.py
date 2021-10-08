@@ -38,12 +38,11 @@ timeTable = {
 }
 
 # ----------------- Preparing Stages and Buses -----------------#
-buses = set(timeTable.keys())
 stages = set()
 for x in timeTable.keys():
     for z in timeTable[x].values():
         stages.add(z)
 
 # ----------------- Prepared Stages and Buses -----------------#
-busList = list(sorted(buses))
+busList = list(sorted(timeTable.keys()))
 stageList = list(sorted(stages))
